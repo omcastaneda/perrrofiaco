@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Adopción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Adopción</h1>
+    <form id="adoption-form" onsubmit="guardarDatos(); return false;">
+        <input type="text" id="nombre" placeholder="Nombre Completo" required>
+        <input type="email" id="email" placeholder="Correo Electrónico" required>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+        <input type="text" id="direccion" placeholder="Dirección" required>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="rdr.js"></script>
+</body>
+</html>
